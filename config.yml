@@ -1,0 +1,16 @@
+title: yu-kiche.github.io
+description: a
+template:
+  repo: yu-kiche.github.io-template
+  name: yu-kiche.github.io
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
